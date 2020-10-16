@@ -3,15 +3,15 @@
 defesa = (input('Cole aqui a contestação: '))
 
 # Tópicos que serão verificados
-preliminar = 'DA INCONSTITUCIONALIDADE DA LEI 8842/2020 - ADI 6495'
+preliminar = ['DA INCONSTITUCIONALIDADE DA LEI 8842/2020 - ADI 6495', 'DA INCONSTITUCIONALIDADE DA LEI LOCAL 2.472/2020']
 ilegitimidade = 'DA ILEGITIMIDADE PASSIVA'
 merito = ['DA INAPLICABILIDADE DA LEI 8842/2020 – INCONSTITUCIONALIDADE', 'DA CONSERVAÇÃO DO CONTRATO – “PACTA SUNT SERVANDA” – DO DEVIDO CUMPRIMENTO CONTRATUAL',
           'DA IMPOSSIBILIDADE DA INVERSÃO DO ÔNUS DA PROVA', 'DA INEXISTÊNCIA DOS DANOS MORAIS PLEITEADOS', 'DA ANÁLISE DA CONDUTA DA VÍTIMA', 'DA INEXISTENCIA DE DANOS MATERIAIS']
 
 # Checagem na variável 'defesa' se os tópicos informados acima estão presentes
 print()
-if preliminar in defesa:
-  print('Tópico de INCONSTITUCIONALIDADE DA LEI 8842/2020 [OK]')
+if preliminar[0] or preliminar[1] in defesa: 
+  print('Tópico de INCONSTITUCIONALIDADE DA LEI 8842/2020 ou 2472/2020 [OK]')
 else:
   print('Está faltando o tópico de INCONSTITUCIONALIDADE DA LEI 8842/2020')
 
