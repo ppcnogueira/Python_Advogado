@@ -1,9 +1,29 @@
-# Calcular meta do PADE Indenizatória 2020
+# Calcular meta específicas
 
-def calc_meta(base_geral, base_acordo, base_imp=4424-518):
-  print('*' * 30)
-  print(f'---Improcedência---\nMeta 100%: {base_imp * 0.017:.1f} processos\nMeta 80%: {base_imp * 0.015:.1f} processos\nMeta 50%: {base_imp * 0.010:.1f} processos\nMeta 20%: {base_imp * 0.005:.1f} processos')
-  print('*' * 30)
-  print(f'---Acordos indenizatória---\nMeta 100%: {base_acordo * 0.091:.1f} processos\nMeta 75%: {base_acordo * 0.070:.1f} processos\nMeta 50%: {base_acordo * 0.050:.1f} processos\nMeta 25%: {base_acordo * 0.002:.1f} processos')
+class CalculaMeta:
 
-calc_meta(4424, 101) # Informar base geral, base de acordo e exceção
+  # Atributo da classe CalculaMeta
+  excecao=0  
+
+  def __init__(self, base=0, base_acordo=0):    
+    self.base = base
+    self.base_acordo = base_acordo
+
+    # Cálculo de 100% da meta de improcedência
+    self.metaimp = (base-CalculaMeta.excecao) * 0.017
+
+    # Cálculo de 100% da meta de outros motivos
+    self.metageral = base * 0.0149
+
+    # Cálculo de 100% da meta de acordos
+    self.metaacordo = base_acordo * 0.091
+
+# Variáveis para informar o número das bases
+improcedencia = CalculaMeta('Informar aqui o número da base de processos')
+acordos = CalculaMeta(base_acordo='Informar o número da base de acordos')
+outros = CalculaMeta('Informar aqui o número da base de processos')
+
+# Resultado
+print(f'META DE IMPROCEDÊNCIA: {improcedencia.metaimp:.1f}')
+print(f'META DE ACORDO: {acordos.metaacordo:.1f}')
+print(f'META DE OUTROS MOTIVOS: {outros.metageral:.1f}')
