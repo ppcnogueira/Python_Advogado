@@ -65,33 +65,6 @@ def consultar_processo() -> None:
         sleep(2)
         menu()
 
-"""
-def excluir_proc() -> None:
-    if len(base) > 0:
-        print('Informe o código do processo que deseja excluir: ')
-        print('--------------------------------------------------------------')
-        print('================== Processos Cadastrados ======================')
-        for processo in base:
-            print(processo)
-            print('---------------------------------------------------------')
-            sleep(1)
-        codigo: int = int(input())
-
-        processo: Processo = pega_processo_por_codigo(codigo)
-
-        if processo:
-            if len(base) > 0:
-                item = {codigo: 1}
-                dict(base.pop())
-                print(f'O processo {processo.num_proc} foi excluído do sistema.')
-                sleep(2)
-                menu()
-        else:
-            print(f'O processo com código {codigo} não foi encontrado.')
-            sleep(2)
-            menu()
-"""
-
 def pega_processo_por_codigo(codigo: int) -> Processo:
     p: Processo = None
 
