@@ -2,7 +2,7 @@
 Projetos iniciais para Python
 
 O QUE É: 
-Programas leves e simples que possuem como objetivo automatizar as tarefas de supervisão em um escritório de advocacia.
+Programas que possuem como objetivo automatizar as tarefas de supervisão em um escritório de advocacia.
 
 PÚBLICO: 
 Os programas neste projeto se destinam à advogados que queiram automatizar e gerenciar de maneira mais eficaz as tarefas do dia-a-dia, destacando-se tarefas de controle de processos.
