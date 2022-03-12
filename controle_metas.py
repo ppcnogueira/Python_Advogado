@@ -1,5 +1,6 @@
-# Calcular meta do PADE Indenizatória 2021
-class CalculaMeta:
+# Calcular meta de um determinado cliente
+
+class CalculaMeta: # Calcula a meta de processos cíveis
 
   def __init__(self, base=5501, base_acordo=170, excecao=680):    
     self.base = base
@@ -19,7 +20,7 @@ class CalculaMeta:
     self.metaacordo = base_acordo * 0.091
 
 
-class CalculaMetaTrab:
+class CalculaMetaTrab: # Calcula a meta de processos trabalhistas
 
   def __init__(self, base=1669):    
     self.base = base
@@ -52,12 +53,12 @@ trabacordos = CalculaMetaTrab(1669)
 traboutros = CalculaMetaTrab(1669)
 
 # Resultado
-print('Metas Indenizatória')
+print('Metas Processos Cíveis')
 print(f'Meta de Improcedência: {improcedencia.metaimp:.1f} processos')
 print(f'Meta de Acordo: {acordos.metaacordo:.1f} processo')
 print(f'Meta de encerramento por outros motivos: {outros.metaoutros:.1f} processos')
 print(f'Meta de encerramento de processos sem custo: {outros.metasemcusto:.1f} processos\n')
-print('Metas Trabalhista\n')
+print('Metas de Processos Trabalhista\n')
 print(f'Meta de Improcedência 100%: {trabimprocedencia.metaimptotal:.1f} processos')
 print(f'Meta de Improcedência 80%: {trabimprocedencia.metaimp80:.1f} processos')
 print(f'Meta de Improcedência 50%: {trabimprocedencia.metaimp50:.1f} processos')
