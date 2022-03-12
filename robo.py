@@ -12,7 +12,7 @@ pyautogui.hotkey('ctrlleft', 'c')
 time.sleep(1)
     
 
-# Legalone - Procurar a pasta
+# Sistema do escritório - Procurar a pasta
 pyautogui.hotkey('winleft', '4')
 pyautogui.click(x=211, y=607) # Posição do GCPJ
     
@@ -24,15 +24,15 @@ while x < processos:
     pyautogui.keyDown('ctrl')
     pyautogui.click(x=543, y=882) # Pasta depois que encontrar
     time.sleep(3)
-    pyautogui.hotkey('ctrlleft', '2') # Trocar aba do Chrome
+    pyautogui.hotkey('ctrlleft', '2') # Trocar aba do Navegador
     time.sleep(4)
     
 
-    # Legalone - Criar a tarefa
+    # Sistema do escritório - Criar a tarefa
     pyautogui.click(x=1743, y=557)
     time.sleep(5)
     
-    pyautogui.click(x=176, y=378) # Civel
+    pyautogui.click(x=176, y=378) # Área da equipe
     pyautogui.write('civel')
     pyautogui.press('enter')
     time.sleep(3)
@@ -40,7 +40,7 @@ while x < processos:
     pyautogui.press('enter')
     time.sleep(4)
 
-    pyautogui.click(x=176, y=416) # Civel
+    pyautogui.click(x=176, y=416) # Área da equipe
     pyautogui.write('civel')
     pyautogui.press('enter')
     time.sleep(3)
@@ -86,6 +86,6 @@ while x < processos:
     time.sleep(1)
     pyautogui.hotkey('winleft', '4')
     time.sleep(1)
-    pyautogui.doubleClick(x=211, y=607) # Posição do GCPJ
+    pyautogui.doubleClick(x=211, y=607) # Posição do sistema do cliente
     x += 1
 
