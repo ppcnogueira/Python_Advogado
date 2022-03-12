@@ -29,3 +29,4 @@ print(f'Recebemos na 2º semana de Outubro {i2} processos.')
 print(f'Recebemos na 3º semana de Outubro {i3} processos.')
 print(f'Recebemos na 4º semana de Outubro {i4} processos.')
 print(f'Recebemos em Outubro um total de {i + i2 + i3 + i4} processos.')
+
